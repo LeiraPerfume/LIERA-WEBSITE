@@ -18,8 +18,8 @@ export default function Footer() {
     {
       title: "About",
       links: [
-        { label: "Home", href: "#" },
-        { label: "About", href: "#" },
+        { label: "Home", href: "/" },
+        { label: "About", href: "/about" },
         { label: "Shop", href: "#" },
         { label: "Contact", href: "#" },
         { label: "Benefits", href: "#" },
@@ -68,7 +68,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[#0F0F11]/10 relative h-fit rounded-3xl overflow-hidden m-8">
+    <footer className="bg-[#0F0F11] relative h-fit rounded-3xl overflow-hidden m-8">
       <div className="max-w-7xl mx-auto p-14 z-40 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 md:gap-8 lg:gap-16 pb-12">
           {/* Brand section */}
