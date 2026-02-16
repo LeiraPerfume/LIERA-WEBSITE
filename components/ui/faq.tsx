@@ -104,7 +104,7 @@ export default function FAQs() {
                                     FAQ
                                 </div>
                             </div>
-                            <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-pink-600 text-center md:text-left">
+                            <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-semibold text-pink-600 text-center md:text-left">
                                 Frequently Asked Questions
                             </h2>
                             <p className="text-gray-600 mt-4 text-center md:text-left">

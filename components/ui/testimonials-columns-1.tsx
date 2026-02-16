@@ -219,7 +219,7 @@ export const Testimonials = () => {
           </motion.div>
 
           <motion.h2 
-            className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-pink-600 text-center"
+            className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-pink-600 text-center"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

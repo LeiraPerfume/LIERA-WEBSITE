@@ -81,7 +81,7 @@ export function MiniNavbar() {
     { label: 'Home', href: '/' },
     { label: 'Shop', href: '/shop' },
     { label: 'About', href: '/about' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Contact', href: '/contact' },
   ];
 
   const loginButtonElement = (

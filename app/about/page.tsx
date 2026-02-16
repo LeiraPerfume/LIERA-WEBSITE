@@ -32,7 +32,7 @@ export default function AboutPage() {
               />
             </div>
           </div>
-          <Footer />
+        <Footer />
         </div>
       </main>
     </>

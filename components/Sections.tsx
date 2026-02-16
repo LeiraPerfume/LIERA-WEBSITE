@@ -163,22 +163,24 @@ export const IntroducingSection = ({ product }: { product: Product }) => {
                             </motion.p>
 
                             {/* Main Heading with Stagger Animation - Smaller */}
-                            <div className="overflow-hidden">
+                            <div className="space-y-0">
                                 {titleWords.map((word, i) => (
-                                    <motion.h1
+                                    <motion.div
                                         key={i}
                                         initial={{ opacity: 0, y: 60 }}
                                         whileInView={{ opacity: 1, y: 0 }}
-                                        viewport={{ once: true }}
+                                        viewport={{ once: true, margin: "-50px" }}
                                         transition={{
                                             delay: 0.5 + i * 0.1,
                                             duration: 0.7,
                                             ease: [0.22, 1, 0.36, 1]
                                         }}
-                                        className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif text-pink-600/95 leading-[0.95] tracking-tight mb-1 font-medium"
+                                        className="overflow-visible"
                                     >
-                                        {word}
-                                    </motion.h1>
+                                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-pink-600 leading-[0.95] tracking-tight block">
+                                            {word}
+                                        </h1>
+                                    </motion.div>
                                 ))}
                             </div>
 
@@ -321,7 +323,7 @@ export const ProductCardsSection = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.3, duration: 0.8 }}
-                        className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-serif font-bold text-pink-600 leading-tight mb-6"
+                        className="text-3xl md:text-4xl lg:text-5xl font-semibold text-pink-600 leading-tight mb-6"
                     >
                         Loved by women everywhere
                     </motion.h2>
@@ -601,7 +603,7 @@ export const BenefitsSection = ({ product }: { product: Product }) => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.7, duration: 0.6 }}
-                                className="text-4xl md:text-5xl font-bold mb-8 leading-tight"
+                                className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-8 leading-tight"
                             >
                                 WHY LEIRA IS GOOD FOR YOU?
                             </motion.h2>
@@ -849,7 +851,7 @@ export const FeaturesSection = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6 }}
-                    className="text-4xl md:text-5xl lg:text-6xl font-bold mb-12 md:mb-16 text-center text-pink-600 relative z-10"
+                    className="text-3xl md:text-4xl lg:text-5xl font-semibold mb-12 md:mb-16 text-center text-pink-600 relative z-10"
                 >
                     WHY LEIRA IS GOOD FOR YOU?
                 </motion.h2>
